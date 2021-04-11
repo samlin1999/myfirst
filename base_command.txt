@@ -2,3 +2,21 @@ git status : 查看當前檔案版本和github上是否相同，若有新的檔�
 git add + 檔案名.副檔名: 添加新的檔案時，應先使用此指令(暫存的概念)
 git commit -m "添加備註" : 設定commit(備註)，add完後應使用此指令
 git push : 將電腦上的檔案上傳到github
+git clone + (SSH上的網址) : 將github上的檔案下載到電腦(code那邊)
+復原檔案:
+狀況一：某個檔案改壞了，需要復原到上一個(最新)Commit紀錄
+git checkout 檔案名稱
+將這個檔案復原回最新一個(上一個)版本。
+狀況二：整個工作目錄都亂了，想要還原整個工作目錄的檔案和索引
+git reset --hard
+將整個目錄復原到最新的Commit狀態，例如：
+Commit1 –> 編輯 –> Commit2 –> 編輯發現壞了
+使用git reset --hard回到
+Commit1 –> 編輯 –> Commit2
+復原索引
+狀況一：git add .後希望某個檔案不要加入追蹤了
+git reset HEAD 檔案名稱
+將這個檔案從暫存索引中移除，待會就不會被Commit出去了。
+狀況二：全部都先不要追蹤了
+git reset HEAD
+將所有檔案從暫存索引中移除，取消追蹤。
