@@ -1,0 +1,3 @@
+設定git作者訊息:(第一次才需要)
+git config --global user.name "xxxxxxx"
+git config --global user.email "xxxx@xxxx"
