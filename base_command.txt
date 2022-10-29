@@ -1,8 +1,11 @@
+git init : 創建,git檔
 git status : 查看當前檔案版本和github上是否相同，若有新的檔案會提示應添加
 git add + 檔案名.副檔名: 添加新的檔案時，應先使用此指令(暫存的概念)
 git commit -m "添加備註" : 設定commit(備註)，add完後應使用此指令
 git push : 將電腦上的檔案上傳到github
 git clone + (SSH上的網址) : 將github上的檔案下載到電腦(code那邊)
+git remote add "遠端資料庫名稱(可自取)" "github上的資料存放位置"
+git push -u "遠端資料庫名稱(可自取)": 將本地資料庫上傳
 復原檔案:
 狀況一：某個檔案改壞了，需要復原到上一個(最新)Commit紀錄
 git checkout 檔案名稱
