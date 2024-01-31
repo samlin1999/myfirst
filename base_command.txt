@@ -23,5 +23,7 @@ git reset HEAD 檔案名稱
 狀況二：全部都先不要追蹤了
 git reset HEAD
 將所有檔案從暫存索引中移除，取消追蹤。
-git reset Soft
+git reset SOFT
 能夠將在本地端已經commit的資訊撤銷，並保留修改前的資訊在本地端，能夠重新進行commit
+若想要上傳超過單檔100mb的檔案，本地端要安裝git install lfs，並在遠端儲存庫開啟權限(Settings->Archives->Include Git LFS objects in archives)
+git GUI軟體: tortoisegit、gitKraKen(免費版只能用public庫)(資料有樹狀結構)
